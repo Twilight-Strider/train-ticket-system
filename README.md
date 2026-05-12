@@ -34,8 +34,6 @@
 - **[Gemini Canvas](https://gemini.google.com/)** — 用於互動式 UI 設計與原型迭代
 - **[Claude AI on Perplexity](https://www.perplexity.ai/)** — 用於邏輯架構設計、程式碼審查與除錯
 
-本專案展示了多個 AI 工具協同 Vibe Coding 的可能性，整個應用僅以一份 `index.html` 完成。
-
 ---
 
 ## 🚀 快速開始
