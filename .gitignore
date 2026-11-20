@@ -1,0 +1,17 @@
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Firebase CLI（專案設定與除錯紀錄）
+.firebaserc
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# 由 scripts/check-config.mjs 依你的名單產生，不要提交
+firestore.rules
+
+# 本機暫存
+node_modules/
+*.log
