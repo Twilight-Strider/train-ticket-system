@@ -21,6 +21,7 @@
 - [已知限制](#已知限制)
 - [疑難排解](#疑難排解)
 - [專案結構](#專案結構)
+- [回報錯誤與意見](#回報錯誤與意見)
 - [開發說明](#開發說明)
 - [讓 AI Agent 幫你部署](#讓-ai-agent-幫你部署)
 - [第三方素材與商標聲明](#第三方素材與商標聲明)
@@ -417,10 +418,27 @@ schedule: {
 │   └── upload_info.jpg
 ├── scripts/
 │   └── check-config.mjs    # 檢查 CONFIG、產生 Firestore 規則
+├── .github/
+│   └── ISSUE_TEMPLATE/     # 回報錯誤的 Issue 表單
 ├── AGENTS.md               # 給 AI Agent 的自動部署說明
 ├── LICENSE
-└── README.md
+├── README.md
+└── SECURITY.md             # 資安問題的回報方式
 ```
+
+---
+
+## 回報錯誤與意見
+
+遇到問題、找到 bug 或有建議，歡迎回報：
+
+- **一般問題（建議）**：到 [GitHub Issues](https://github.com/Twilight-Strider/train-ticket-system/issues/new/choose) 開一個新的 Issue，頁面上有表單可以照著填。
+- **不想公開、或內容涉及隱私**：寄信到 **bug-report-ticket-select@1090033.fyi**，信件會轉寄給維護者。
+- **疑似資安問題**：請**不要**開公開 Issue，請見 [`SECURITY.md`](SECURITY.md)。
+
+回報時請盡量附上：使用的裝置與瀏覽器（含版本）、重現步驟、你預期的結果與實際發生的結果，以及瀏覽器主控台（按 F12 → Console）裡的紅色錯誤訊息。
+
+> ⚠️ **請不要在公開的 Issue 貼出**訂票代碼、取票驗證碼、含個人資訊的截圖或你的 Email。需要提供時請遮蔽，或改用寄信的方式。
 
 ---
 
@@ -428,8 +446,11 @@ schedule: {
 
 本專案為 **Vibe Coding** 協同開發專案，由以下 AI 工具協力完成：
 
-- **[Gemini Canvas](https://gemini.google.com/)** — 用於互動式 UI 設計與原型迭代
-- **[Claude AI on Perplexity](https://www.perplexity.ai/)** — 用於邏輯架構設計、程式碼審查與除錯
+- **[Gemini Canvas](https://gemini.google.com/)** — 互動式 UI 設計與原型迭代
+- **[Claude AI on Perplexity](https://www.perplexity.ai/)** — 邏輯架構設計、程式碼審查與除錯
+- **[Claude](https://www.anthropic.com/claude)（Anthropic）** — 2026 年 11 月以 Claude Code 協助程式碼審查與修正、重寫本 README、撰寫 `AGENTS.md` 與 `scripts/check-config.mjs`、建立 Issue 表單
+
+專案由 [Twilight-Strider](https://github.com/Twilight-Strider) 維護。
 
 ---
 
